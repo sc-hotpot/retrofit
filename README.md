@@ -66,9 +66,6 @@ step4, create the Api interface and manage
     =============================interface========================
     public interface Api {
 
-    /**
-     * 获取验证码
-     */
     @GET("xx/xx")
     Flowable<Object> dosome(@Query("phone") String phone);
     
