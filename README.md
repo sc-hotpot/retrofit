@@ -15,7 +15,7 @@ Step 2. Add the dependency
   
 step 3. init before use 
   
-  HttpConfigs.init(new HttpConfigs.I_HttpConfig() {
+        HttpConfigs.init(new HttpConfigs.I_HttpConfig() {
             @Override
             public String getBaseUrl() {
                 return null;
@@ -64,8 +64,9 @@ step 3. init before use
         
 step4, create the Api interface and manage
     =============================interface========================
+    
     public interface Api {
-
+    
     @GET("xx/xx")
     Flowable<Object> dosome(@Query("phone") String phone);
     
